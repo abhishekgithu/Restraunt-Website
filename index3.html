@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek- Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <header>
+        <nav>
+            <div class="logo"><span>Food</span>HUB</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="index2.html">Food Menu</a>
+                <a href="#">Reservation</a>
+            </div>
+        </nav>
+    </header>
+    
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>Reservation</span></h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/order-img.jpg" alt="">
+        </div>
+        
+        <form action="post" class="reservation">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name"id="name">
+                <input type="email" placeholder="email"id="email" >
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="number of people"id="Nop">
+                <input type="text" placeholder="mobile number" id="mob">
+            </div>
+            <div class="inputBox">
+                <input type="date">
+            </div>
+           <div>
+            <button id="btn" class="btn btn-primary" type="button">Book Now
+   
+            </button>
+    </div>
+        </form>
+
+    </div>
+        
+    <span>
+        <button id="showbutton" onclick="res()">Show Reservation</button>
+    </span>
+
+</section>
+<div style="background-color: brown;">
+
+<div id="show" class="res1"style="display: none;">
+    <div id="tabhead">
+    <div id="items" class="my-4">
+        <h2 style="text-align: center;" id="h2">Reservation List</h2><center>
+        <table class="table table-hover table-scroll thead-dark cls2" style="text-align: center;align-self: center;">
+            <thead class="thead-dark bg-primary">
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Customer Name.</th>
+                    <th scope="col">No of seats booked</th>
+                    <th scope="col">Mobile No.</th>
+                    <th scope="col">Email.</th>
+                    <th scope="col">Date of booking</th>
+                </tr>
+            </thead>
+             <tbody id="tableBody">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Get some Coffee</td>
+                    <td>You need coffee as you are a coder</td>
+                    <td><button class="btn btn-sm btn-primary">Delete</button></td>
+                </tr> 
+             </tbody>
+        </table></center>
+    </div></div>
+  </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
